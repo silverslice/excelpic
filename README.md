@@ -19,10 +19,10 @@ require __DIR__ . '/vendor/autoload.php';
 $converter = new Converter();
 
 // open xlsx file
-$converter->open('test.xlsx');
+$converter->open('test.xlsx')
 
     // convert all images to resizable
-    ->convertImagesToResizable();
+    ->convertImagesToResizable()
 
     // save xlsx document
     ->save('test.xlsx');
