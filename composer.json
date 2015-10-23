@@ -1,0 +1,22 @@
+{
+    "name": "silverslice/excelpic",
+    "description": "Make pictures in xlsx files resizable with cells",
+    "keywords": ["xlsx", "drawings"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Mikheev",
+            "email": "silver_slice@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-zip": "*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Silverslice\\ExcelPic\\": "src/"
+        }
+    }
+}
