@@ -46,7 +46,7 @@ class Zip
         }
 
         $zip = new \ZipArchive();
-        if (!$zip->open($destination, \ZIPARCHIVE::OVERWRITE)) {
+        if (!$zip->open($destination, \ZIPARCHIVE::CREATE)) {
             throw new \Exception('Unable to open zip archive');
         }
 
