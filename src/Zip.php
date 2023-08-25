@@ -70,13 +70,13 @@ class Zip
                     $zip->addEmptyDir(str_replace($source . '/', '', $file . '/'));
                 } else {
                     if (is_file($file) === true) {
-                        $zip->addFromString(str_replace($source . '/', '', $file), file_get_contents($file, FILE_BINARY));
+                        $zip->addFromString(str_replace($source . '/', '', $file), file_get_contents($file));
                     }
                 }
             }
         } else {
             if (is_file($source) === true) {
-                $zip->addFromString(basename($source), file_get_contents($source, FILE_BINARY));
+                $zip->addFromString(basename($source), file_get_contents($source));
             }
         }
 
